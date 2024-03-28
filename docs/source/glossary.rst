@@ -6,7 +6,7 @@ Glossary
 
 .. glossary::
 	**double contraction**
-		Let :math:`\mathbf{A}` and :math:`\mathbf{B}` two second order tensors. The double contraction between :math:`\mathbf{A}` and :math:`\mathbf{B}` is :math:`\mathbf{A}:\mathbf{B}=\mathbf{A}_{ij}\mathbf{B}_{ji}`. Let :math:`\mathbb{C}` a fourth order tensor. The double contraction between :math:`\mathbb{C}` and :math:`\mathbf{A}` is :math:`(\mathbb{C}:\mathbf{A)_{ij}}=\mathbb{C}_{ijkl}:\mathbf{A}_{lk}`
+		Let :math:`\mathbf{A}` and :math:`\mathbf{B}` two second order tensors. The double contraction between :math:`\mathbf{A}` and :math:`\mathbf{B}` is :math:`\mathbf{A}:\mathbf{B}=\mathbf{A}_{ij}\mathbf{B}_{ji}`. Let :math:`\mathbb{C}` a fourth order tensor. The double contraction between :math:`\mathbb{C}` and :math:`\mathbf{A}` is :math:`(\mathbb{C}:\mathbf{A})_{ij}=\mathbb{C}_{ijkl}:\mathbf{A}_{lk}`
 		
 .. glossary::
 	**dyadic product**
