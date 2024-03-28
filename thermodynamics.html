@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 
-<html lang="en" data-content_root="./">
+<html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thermodynamics and constitutive laws &#8212; Magneto-mechanical modeling 1.0 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
-    <script src="_static/documentation_options.js?v=f2a433a1"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -19,9 +20,8 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-
   
-  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head><body>
   
@@ -33,32 +33,32 @@
 
           <div class="body" role="main">
             
-  <section id="thermodynamics-and-constitutive-laws">
-<h1>Thermodynamics and constitutive laws<a class="headerlink" href="#thermodynamics-and-constitutive-laws" title="Link to this heading">¶</a></h1>
-<section id="legendre-transformation">
-<h2>Legendre transformation<a class="headerlink" href="#legendre-transformation" title="Link to this heading">¶</a></h2>
+  <div class="section" id="thermodynamics-and-constitutive-laws">
+<h1>Thermodynamics and constitutive laws<a class="headerlink" href="#thermodynamics-and-constitutive-laws" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="legendre-transformation">
+<h2>Legendre transformation<a class="headerlink" href="#legendre-transformation" title="Permalink to this headline">¶</a></h2>
 <p>Considering thermo-magnetic-mechanical physics, the arguments for the internal energy density <span class="math notranslate nohighlight">\(u\)</span> at any scale are the following extensive thermodynamic variables: the entropy density <span class="math notranslate nohighlight">\(s\)</span>, the magnetization <span class="math notranslate nohighlight">\(\pmb{m}\)</span>  and the total strain <span class="math notranslate nohighlight">\(\boldsymbol{\epsilon}\)</span>.</p>
 <div class="math notranslate nohighlight" id="equation-internal-energy">
-<span class="eqno">(1)<a class="headerlink" href="#equation-internal-energy" title="Link to this equation">¶</a></span>\[\dot u (\pmb{m},\boldsymbol{\epsilon},s)=\mu_0\pmb{h}\cdot \dot{\pmb{m}}+\boldsymbol{\sigma}:\dot{\boldsymbol{\epsilon}}+T\dot s\]</div>
+<span class="eqno">(1)<a class="headerlink" href="#equation-internal-energy" title="Permalink to this equation">¶</a></span>\[\dot u (\pmb{m},\boldsymbol{\epsilon},s)=\mu_0\pmb{h}\cdot \dot{\pmb{m}}+\boldsymbol{\sigma}:\dot{\boldsymbol{\epsilon}}+T\dot s\]</div>
 <p>Using Legendre transformation, one can define Helmoltz free energy density <span class="math notranslate nohighlight">\(f\)</span> such that</p>
 <div class="math notranslate nohighlight" id="equation-helmoltz-energy">
-<span class="eqno">(2)<a class="headerlink" href="#equation-helmoltz-energy" title="Link to this equation">¶</a></span>\[f(\pmb{m},\boldsymbol{\epsilon},T)=u-Ts.\]</div>
+<span class="eqno">(2)<a class="headerlink" href="#equation-helmoltz-energy" title="Permalink to this equation">¶</a></span>\[f(\pmb{m},\boldsymbol{\epsilon},T)=u-Ts.\]</div>
 <p>Another Legendre transformation allows to define free enthalpy density</p>
 <div class="math notranslate nohighlight" id="equation-free-enthalpy">
-<span class="eqno">(3)<a class="headerlink" href="#equation-free-enthalpy" title="Link to this equation">¶</a></span>\[\Psi(\pmb{m},\boldsymbol{\sigma},T)=f-\boldsymbol{\sigma}:\boldsymbol{\epsilon}.\]</div>
+<span class="eqno">(3)<a class="headerlink" href="#equation-free-enthalpy" title="Permalink to this equation">¶</a></span>\[\Psi(\pmb{m},\boldsymbol{\sigma},T)=f-\boldsymbol{\sigma}:\boldsymbol{\epsilon}.\]</div>
 <p>Using <a class="reference internal" href="#equation-internal-energy">(1)</a>, <a class="reference internal" href="#equation-helmoltz-energy">(2)</a> and <a class="reference internal" href="#equation-free-enthalpy">(3)</a>, one can identify the equations of state</p>
 <div class="math notranslate nohighlight" id="equation-equations-state">
-<span class="eqno">(4)<a class="headerlink" href="#equation-equations-state" title="Link to this equation">¶</a></span>\[\frac{\partial \Psi(\pmb{m},\boldsymbol{\sigma},T)}{\partial \pmb{m}}=\mu_0 \pmb{h}, \quad
+<span class="eqno">(4)<a class="headerlink" href="#equation-equations-state" title="Permalink to this equation">¶</a></span>\[\frac{\partial \Psi(\pmb{m},\boldsymbol{\sigma},T)}{\partial \pmb{m}}=\mu_0 \pmb{h}, \quad
 \frac{\partial \Psi(\pmb{m},\boldsymbol{\sigma},T)}{\partial \boldsymbol{\sigma}}=-\boldsymbol{\epsilon}, \quad \frac{\partial \Psi(\pmb{m},\boldsymbol{\sigma},T)}{\partial T}=-s.\]</div>
 <p>It is sometimes more convenient to have a function of <span class="math notranslate nohighlight">\(\pmb{h}\)</span> instead of <span class="math notranslate nohighlight">\(\pmb{m}\)</span>. The Gibbs free energy is then defined as</p>
 <div class="math notranslate nohighlight" id="equation-gibbs">
-<span class="eqno">(5)<a class="headerlink" href="#equation-gibbs" title="Link to this equation">¶</a></span>\[g(\pmb{h},\boldsymbol{\sigma},T)=\Psi-\mu_0\pmb{h} \cdot \pmb{m}\]</div>
+<span class="eqno">(5)<a class="headerlink" href="#equation-gibbs" title="Permalink to this equation">¶</a></span>\[g(\pmb{h},\boldsymbol{\sigma},T)=\Psi-\mu_0\pmb{h} \cdot \pmb{m}\]</div>
 <p>where the second therm denotes the <a class="reference internal" href="glossary.html#term-Zeeman-energy"><span class="xref std std-term">Zeeman energy</span></a>. The equations of state can be used to write the constitutive laws even if it is not mandatory.</p>
-</section>
-<section id="minimal-integrity-basis-for-cubic-symmetry">
-<h2>Minimal integrity basis for cubic symmetry<a class="headerlink" href="#minimal-integrity-basis-for-cubic-symmetry" title="Link to this heading">¶</a></h2>
-</section>
-</section>
+</div>
+<div class="section" id="minimal-integrity-basis-for-cubic-symmetry">
+<h2>Minimal integrity basis for cubic symmetry<a class="headerlink" href="#minimal-integrity-basis-for-cubic-symmetry" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
 
 
           </div>
@@ -121,7 +121,7 @@
     </form>
     </div>
 </div>
-<script>document.getElementById('searchbox').style.display = "block"</script>
+<script>$('#searchbox').show(0);</script>
 
 
 
@@ -135,11 +135,11 @@
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &#169;2024, Julien TAURINES.
+      &copy;2024, Julien TAURINES.
       
       |
-      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
-      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="_sources/thermodynamics.rst.txt"
