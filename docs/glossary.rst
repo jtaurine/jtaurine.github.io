@@ -2,11 +2,10 @@ Glossary
 ========
 .. glossary::
 	**Boltzmann distribution**
-		Probablility distribution that gives the probability of a state as a function of the state and the temperature of the system.
 
 .. glossary::
 	**double contraction**
-		Let :math:`\mathbf{A}` and :math:`\mathbf{B}` two second order tensors. The double contraction between :math:`\mathbf{A}` and :math:`\mathbf{B}` is :math:`\mathbf{A}:\mathbf{B}=\mathbf{A}_{ij}\mathbf{B}_{ji}`. Let :math:`\mathbb{C}` a fourth order tensor. The double contraction between :math:`\mathbb{C}` and :math:`\mathbf{A}` is :math:`(\mathbb{C}:\mathbf{A)_{ij}}=\mathbb{C}_{ijkl}:\mathbf{A}_{lk}`
+		Let :math:`\mathbf{A}` and :math:`\mathbf{B}` two second order tensors. The double contraction between :math:`\mathbf{A}` and :math:`\mathbf{B}` is :math:`\mathbf{A}:\mathbf{B}=\mathbf{A}_{ij}\mathbf{B}_{ji}`. Let :math:`\mathbb{C}` a fourth order tensor. The double contraction between :math:`\mathbb{C}` and :math:`\mathbf{A}` is :math:`(\mathbb{C}:\mathbf{A})_{ij}=\mathbb{C}_{ijkl}:\mathbf{A}_{lk}`
 		
 .. glossary::
 	**dyadic product**
@@ -24,11 +23,11 @@ Glossary
 
 .. glossary::
 	**integrity basis**
-		BLABLABLA
+		
 
 .. glossary::
 	**invariant**
-		BLABLABLA
+		
 
 .. glossary::
 	**magnetostriction**
@@ -36,14 +35,14 @@ Glossary
 
 .. glossary::
 	**magnetic domain**
-		BLABLABLA
+		
 .. glossary::
 	**permeability of free space**
-		BLABLABLA
+		
 
 .. glossary::
 	**Texture**
-		BLABLABLA
+		
 
 .. glossary::
 	**Zeeman energy**
