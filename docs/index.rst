@@ -4,8 +4,6 @@
    contain the root `toctree` directive.
 
 
-
-
 Magneto-mechanical hysteretis model
 ===================================
 
